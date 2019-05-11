@@ -36,7 +36,7 @@ class _HomePageState extends State<HomePage> {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text("Add Note"),
+          title: Text(note == null ? "Add Note" : "Edit Note"),
           content: Form(
             key: _formKey,
             child: ListView(
